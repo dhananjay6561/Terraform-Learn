@@ -106,3 +106,9 @@ variable "bucket_name_set" {
   type        = set(string)
   default     = ["dj-terraform-state6561", "dj-terraform-state6562", "dj-terraform-state6563"]
 }
+
+variable "allowed_vm_types" {
+  description = "Set of allowed VM instance types"
+  type        = list(string)
+  default     = ["t3.micro", "t2.small", "t2.medium"]
+}
